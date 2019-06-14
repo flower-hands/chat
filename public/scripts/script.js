@@ -1,7 +1,7 @@
 var socketio = io.connect("http://localhost:3000");
 
 socketio.on("message", function(msg) {
-    inner.insertAdjacentHTML('beforeend', '<ul>' + msg + '</ul>');
+    inner.insertAdjacentHTML('beforeend', "<div class='bubble-base'><div class='not-select'>" + msg + "</div><div class='my-bubble'>" + msg + "</div></div>");
 });
 
 function sendMessage(msg) {
