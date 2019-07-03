@@ -7,9 +7,10 @@ const PORT = process.env.PORT || 3000;
 
 app.use(express.static(__dirname + "/public"));
 
-app.get("/", function(req, res) {
-    res.sendFile(__dirname + "/views/index.html");
-});
+app.use("/chat", require("./router/chat.js"));
+app.use("/login", require("./router/login.js"));
+app.use("/room", require("./router/room.js"));
+    
 
 io.on("connection", function(socket) {
     socket.on("message", function(msg) {
