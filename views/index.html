@@ -9,9 +9,14 @@
     </head>
     <body class="background">
         <!-- <ul id="messages"></ul> -->
-        <div id="inner">
+        <header id="header" class="header">
+            <form id="logout_form" action="/login" method="POST">
+                <button>ログアウト</button>
+            </form>
+        </header>
+        <div id="inner" class="inner">
         </div>
-        <div id="app">
+        <div id="app" class="bottom">
             <div class="input-group">
                 <form id="message_form" action="#">
                 <!-- <input id="input_msg" autocomplete="off" /><button v-on:click="sendMessage(document.getElementById('input_msg').value)">Send</button> -->
