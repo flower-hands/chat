@@ -7,10 +7,20 @@
     top: 30px;
 }
 
-.bottom {
-    position: absolute;
+.bottom-form {
     bottom: 0;
-    display: inline;
+    z-index:24;
+}
+
+.header{
+    background: gray;
+    box-shadow:0 2px 8px rgba(30,30,80,.3);
+    left:0;
+    line-height:1;
+    position:fixed;
+    top:0;
+    width:100%;
+    z-index:24;
 }
 
 .other-bubble {
@@ -75,13 +85,8 @@
     color: transparent;
 }
 
-.header{
-    background: gray;
-    box-shadow:0 2px 8px rgba(30,30,80,.3);
-    left:0;
-    line-height:1;
-    position:fixed;
-    top:0;
-    width:100%;
-    z-index:24;
-  }
+.dummy {
+    font-size: 40px;
+    user-select: none;
+    color: transparent;
+}
