@@ -16,16 +16,14 @@
         </header>
         <div id="inner" class="inner">
         </div>
-        <div id="app" class="bottom">
-            <div class="input-group">
-                <form id="message_form" action="#">
+        <div class="dummy">dummy</div>
+        <div id="app">
+             
+            <form id="message_form" class="form-inline row bottom-form fixed-bottom" action="#">
                 <!-- <input id="input_msg" autocomplete="off" /><button v-on:click="sendMessage(document.getElementById('input_msg').value)">Send</button> -->
-                    <input id="input_msg" autocomplete="off" placeholder="" aria-label="" aria-describedby="basic-addon1">
-                    <div class="input-group-append">
-                        <button class="btn btn-success" type="button" onclick="sendMessage(document.getElementById('input_msg').value)">SEND</button>
-                    </div>
-                </form>
-            <div>
+                <input class="form-control col-10" id="input_msg" autocomplete="off" placeholder="" aria-label="" aria-describedby="basic-addon1">
+                <button class="btn btn-outline-success col-2" type="button" onclick="sendMessage(document.getElementById('input_msg').value)">SEND</button>
+            </form>
         </div>
         <script src="./scripts/script.js"></script>
         <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
