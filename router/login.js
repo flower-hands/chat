@@ -1,24 +1,15 @@
 const express = require("express");
 const router  = express.Router();
-
-//router.use(express.static("./../../views"));
-//router.use(express.static("./test.html"));
+const path = require("path");
 
 router.get("/", (req, res) => {
-    //console.log(__dirname);
-    dir = __dirname
-    dir = dir.slice(0, dir.length - 6)
-    //res.sendFile("C:/Users/18t304/Desktop/chat/views/index.html");
-    res.sendFile(dir + "views/login.html");
-    //console.log(dir);
-    
-    //res.send("aaa");
+    res.sendFile(path.resolve("views/login.html"));
+    //console.log(path.resolve("views/login.html"));
 });
 
 router.post("/", (req, res) => {
-    dir = __dirname
-    dir = dir.slice(0, dir.length - 6)
-    res.sendFile(dir + "views/login.html");
+    res.sendFile(path.resolve("views/login.html"));
+    //console.log(path.resolve("views/login.html"));
 });
 
 module.exports = router;
